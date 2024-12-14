@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://cr877irvsrjw1"]
+[gd_scene load_steps=20 format=3 uid="uid://cr877irvsrjw1"]
 
 [ext_resource type="PackedScene" uid="uid://cw2c82cnfgmwq" path="res://scenes/player.tscn" id="1_3vi7s"]
 [ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_iibym"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://1pluyccmlmvm" path="res://scenes/killzone.tscn" id="5_it8kd"]
 [ext_resource type="PackedScene" uid="uid://kh5y8qevk4jr" path="res://scenes/slime.tscn" id="6_rb3ui"]
 [ext_resource type="FontFile" uid="uid://bq2ulgetsbcaq" path="res://assets/fonts/PixelOperator8.ttf" id="7_ytab1"]
+[ext_resource type="PackedScene" uid="uid://dwxsd1hhemdw6" path="res://scenes/image.tscn" id="10_j8njl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w4a15"]
 texture = ExtResource("2_tgq8g")
@@ -354,6 +355,30 @@ position = Vector2(799, -178)
 [node name="Coin17" parent="Coins" instance=ExtResource("4_6v21y")]
 position = Vector2(737, -241)
 
+[node name="Coin20" parent="Coins" instance=ExtResource("4_6v21y")]
+position = Vector2(587, -465)
+
+[node name="Coin28" parent="Coins" instance=ExtResource("4_6v21y")]
+position = Vector2(585, -344)
+
+[node name="Coin22" parent="Coins" instance=ExtResource("4_6v21y")]
+position = Vector2(538, -478)
+
+[node name="Coin23" parent="Coins" instance=ExtResource("4_6v21y")]
+position = Vector2(478, -478)
+
+[node name="Coin24" parent="Coins" instance=ExtResource("4_6v21y")]
+position = Vector2(478, -478)
+
+[node name="Coin25" parent="Coins" instance=ExtResource("4_6v21y")]
+position = Vector2(397, -478)
+
+[node name="Coin26" parent="Coins" instance=ExtResource("4_6v21y")]
+position = Vector2(319, -478)
+
+[node name="Coin27" parent="Coins" instance=ExtResource("4_6v21y")]
+position = Vector2(319, -612)
+
 [node name="Coin18" parent="Coins" instance=ExtResource("4_6v21y")]
 position = Vector2(591, -290)
 
@@ -372,6 +397,58 @@ position = Vector2(455, 27)
 [node name="Platform4" parent="Platforms" instance=ExtResource("3_55h6u")]
 visible = false
 position = Vector2(585, -291)
+
+[node name="Platform6" parent="Platforms" instance=ExtResource("3_55h6u")]
+visible = false
+position = Vector2(585, -332)
+
+[node name="Platform7" parent="Platforms" instance=ExtResource("3_55h6u")]
+visible = false
+position = Vector2(585, -370)
+
+[node name="Platform8" parent="Platforms" instance=ExtResource("3_55h6u")]
+visible = false
+position = Vector2(585, -409)
+
+[node name="Platform9" parent="Platforms" instance=ExtResource("3_55h6u")]
+visible = false
+position = Vector2(585, -452)
+
+[node name="Platform10" parent="Platforms" instance=ExtResource("3_55h6u")]
+visible = false
+position = Vector2(478, -464)
+rotation = -3.13582
+scale = Vector2(5.47008, -1.10292)
+
+[node name="Platform11" parent="Platforms" instance=ExtResource("3_55h6u")]
+visible = false
+position = Vector2(320, -465)
+rotation = 3.13246
+scale = Vector2(1.03008, -1.10292)
+
+[node name="Platform12" parent="Platforms" instance=ExtResource("3_55h6u")]
+visible = false
+position = Vector2(320, -506)
+rotation = 3.13315
+scale = Vector2(1.03008, -1.10292)
+
+[node name="Platform13" parent="Platforms" instance=ExtResource("3_55h6u")]
+visible = false
+position = Vector2(320, -542)
+rotation = -3.1326
+scale = Vector2(1.03008, -1.10292)
+
+[node name="Platform14" parent="Platforms" instance=ExtResource("3_55h6u")]
+visible = false
+position = Vector2(320, -573)
+rotation = -3.1393
+scale = Vector2(1.03008, -1.10292)
+
+[node name="Platform15" parent="Platforms" instance=ExtResource("3_55h6u")]
+visible = false
+position = Vector2(320, -623)
+rotation = -3.1393
+scale = Vector2(1.03008, -1.10292)
 
 [node name="Platform2" parent="Platforms" instance=ExtResource("3_55h6u")]
 position = Vector2(419, 53)
@@ -435,6 +512,39 @@ theme_override_font_sizes/font_size = 8
 text = "When will it
 be over...?"
 
+[node name="Label5" type="Label" parent="Labels"]
+offset_left = 242.0
+offset_top = -503.0
+offset_right = 414.0
+offset_bottom = -484.0
+theme_override_colors/font_color = Color(0.139276, 0.123228, 0.104501, 1)
+theme_override_fonts/font = ExtResource("7_ytab1")
+theme_override_font_sizes/font_size = 8
+text = "So if there's nothing left...
+I can do whatever I want..."
+
+[node name="Label6" type="Label" parent="Labels"]
+offset_left = 242.0
+offset_top = -503.0
+offset_right = 414.0
+offset_bottom = -484.0
+theme_override_colors/font_color = Color(0.139276, 0.123228, 0.104501, 1)
+theme_override_fonts/font = ExtResource("7_ytab1")
+theme_override_font_sizes/font_size = 8
+text = "So if there's nothing left...
+I can do whatever I want..."
+
+[node name="Label7" type="Label" parent="Labels"]
+offset_left = 276.0
+offset_top = -617.0
+offset_right = 368.0
+offset_bottom = -609.0
+theme_override_colors/font_color = Color(0.139276, 0.123228, 0.104501, 1)
+theme_override_fonts/font = ExtResource("7_ytab1")
+theme_override_font_sizes/font_size = 8
+text = "I'll show them."
+horizontal_alignment = 1
+
 [node name="Enemies" type="Node" parent="."]
 
 [node name="Slime" parent="Enemies" instance=ExtResource("6_rb3ui")]
@@ -442,3 +552,7 @@ position = Vector2(879, 88)
 
 [node name="Slime2" parent="Enemies" instance=ExtResource("6_rb3ui")]
 position = Vector2(271, 72)
+
+[node name="Image" parent="." instance=ExtResource("10_j8njl")]
+position = Vector2(152, -693)
+scale = Vector2(0.208722, 0.208722)

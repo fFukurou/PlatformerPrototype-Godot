@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dwxsd1hhemdw6"]
+
+[ext_resource type="Texture2D" uid="uid://dwe467i282gox" path="res://assets/images/My birthday 19.jpg" id="1_km0br"]
+
+[node name="Image" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-26, 12.9999)
+scale = Vector2(0.155769, 0.155769)
+texture = ExtResource("1_km0br")
